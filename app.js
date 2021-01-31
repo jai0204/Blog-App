@@ -15,6 +15,7 @@ var blogRoutes = require("./routes/blog"),
     indexRoutes = require("./routes/index");
 
 //App Config
+//DB Config
 //mongoose.connect("mongodb://localhost/restful_blog_app", {useNewUrlParser: true});
 const dburl = process.env.MONGODB_URL || "mongodb://localhost/restful_blog_app";
 mongoose.connect(dburl, {useNewUrlParser: true, useUnifiedTopology: true});
